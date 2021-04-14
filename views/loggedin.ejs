@@ -1,0 +1,38 @@
+<%- include('partials/header') %>
+<div class="centered">
+
+
+ <h1 class="display-3"><%-logininfo%></h1>
+ <% if(button==="yes"){ %>
+   <a class="btn btn-dark btn-lg" href="/login" role="button">Login</a>
+ <% } else { %>
+ <a class="btn btn-dark btn-lg" href="/secrets/<%-username%>" role="button">Add your secretes!!</a>
+ <a class="btn btn-dark btn-lg" href="/final/<%-username%>" role="button">View your saved your secretes!!</a>
+
+<% } %>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<%- include('partials/footer') %>

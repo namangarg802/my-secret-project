@@ -1,0 +1,28 @@
+<%- include('partials/header') %>
+<div class="secrets">
+
+<div >
+
+
+ <h1 class="display-3">Your secrets!!</h1>
+ <ul>
+        <% lists.forEach((list)=>{%>
+   <li>
+       <div class="form-check">
+
+  <label class="form-check-label" for="flexRadioDefault1">
+
+      <p><%=list%></p>
+    <% }) %>
+  </label>  
+</div>
+   </li>
+ </ul>
+ </div>
+ <div class="">
+   <a class="btn btn-dark btn-lg" href="/" role="button">Logout</a>
+ </div>
+
+</div>
+
+<%- include('partials/footer') %>
