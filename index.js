@@ -13,8 +13,9 @@ const mongoose = require('mongoose');
 const assert=require('assert');
 const encrypt=require('mongoose-encryption');
 const url='mongodb+srv://atharvgarg:atharvgarg@cluster0.d5oez.mongodb.net/test';
+// process.env.DB_CONNECT
 const dbName='fruitsDB';
-const client =new MongoClient(url,{ useNewUrlParser: true, useUnifiedTopology: true });
+const client =new MongoClient(process.env.DB_CONNECT,{ useNewUrlParser: true, useUnifiedTopology: true });
   mongoose.connect(url,{ useNewUrlParser: true, useUnifiedTopology: true });
 
 

@@ -137,3 +137,22 @@ body {
 	font-size: 12px;
   color: #fff;
 }
+
+
+
+
+
+
+
+#footer{
+  text-align: center;
+  margin-top:20px;
+  padding-top: 20px;
+  background-color:#d8e3e7;
+}
+.footer-i{
+  padding: 10px;
+}
+.btn-cta{
+  margin:40px;
+}
